@@ -1,18 +1,88 @@
-<html>
-  <head>
-    <style>
-      label {display: block;font: 1rem 'Fira Sans', sans-serif;font-size: 30px;}
-      img {float: left;}
-      input, label {margin: .4rem 0;}
-      h1 {text-align: center;font-size: 150px;}
-    </style>
-  </head>
-  <body>
-    <h1>Brent's Dog Wash</h1>
-    <img src="./dogwash.png" alt="GoodDogPic">
-    <label for="start">Dog Wash Date:</label>
-    <input type="date" id="start" name="DogWash"
-       value="2021-07-01"
-       min="2018-01-01" max="2022-12-31">
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suds & Snuggles | Mobile Dog Wash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Menu -->
+    <header>
+        <div class="logo">
+            <!-- Reference to your local logo graphic -->
+            <img src="images/suds-logo.png" alt="Suds & Snuggles Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services & Pricing</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Home/Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>We Come to You!</h1>
+                <p>Convenient, stress-free mobile dog grooming right at your doorstep in the local area.</p>
+                <a href="#contact" class="cta-button">Schedule an Appointment</a>
+            </div>
+            <!-- Reference to a main hero image graphic -->
+            <img src="images/hero-dog.jpg" alt="A happy dog being washed">
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <!-- Reference to a service icon graphic -->
+                    <img src="images/dog-wash-icon.png" alt="Wash icon">
+                    <h3>Basic Wash</h3>
+                    <p>Shampoo, condition, towel dry, and a spritz of cologne.</p>
+                </div>
+                <div class="service-item">
+                    <!-- Reference to a service icon graphic -->
+                    <img src="images/full-groom.jpg" alt="Groom icon">
+                    <h3>Full Groom</h3>
+                    <p>Everything in the basic wash plus nail trim, ear clean, and haircut.</p>
+                </div>
+                <div class="service-item">
+                    <!-- Reference to a service icon graphic -->
+                    <img src="images/extras.jpg" alt="Extras icon">
+                    <h3>Add-ons</h3>
+                    <p>Teeth cleaning, de-shedding treatment, and flea baths.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Suds & Snuggles is a locally owned business dedicated to providing a comfortable grooming experience for your pet. We use eco-friendly products and gentle techniques.</p>
+            <!-- Reference to a team photo graphic -->
+            <img src="images/washer.jpg" alt="Groomer with a dog">
+        </section>
+
+        <!-- Contact/Booking Section -->
+        <section id="contact">
+            <h2>Book Now</h2>
+            <p>Ready for a clean pup? Call us at 555-1234 or fill out our simple online form.</p>
+            <!-- Reference to a van graphic -->
+            <img src="images/van.jpg" alt="Mobile grooming van graphic">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Suds & Snuggles Mobile Dog Wash. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>

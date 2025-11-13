@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #e2e2e2;
+}
+
+section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+/* Hero Section Specifics */
+.hero {
+    background: #aaffee; /* A light, clean color */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero img {
+    max-width: 40%;
+    height: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Services Section Specifics */
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.service-item img {
+    height: 100px; /* Adjust icon size */
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Basic responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 10px;
+    }
+    .hero, .service-list {
+        flex-direction: column;
+    }
+    .hero img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
